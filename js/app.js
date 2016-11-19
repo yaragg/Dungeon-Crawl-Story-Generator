@@ -1,5 +1,3 @@
-window.onload = loadGrammar;
-
 function loadGrammar() {
 $("#content").html("");
 
