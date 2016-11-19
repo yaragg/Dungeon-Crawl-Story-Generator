@@ -1,0 +1,396 @@
+MYRULE = {
+	"name-list": [
+		"Abel",
+		"Kron",
+		"Mestor",
+		"Eiras",
+		"Emil",
+		"Kuni",
+		"Karl",
+		"Cyril",
+		"Lagen",
+		"Tagus",
+		"Sergius",
+		"Solon",
+		"Livius",
+		"Gaius",
+		"Cassian",
+		"Elgian",
+		"Eliphas",
+		"Eilhart",
+		"Kieran",
+		"Arden",
+		"Emdae",
+		"Crowe",
+		"Reschen",
+		"Kaelen",
+		"Fereol",
+		"Caers",
+		"Kyran",
+		"Varian",
+		"Riel",
+		"Lemuel",
+		"Samar",
+		"Cenes",
+		"Iskar",
+		"Romoun",
+		"Aylan",
+		"Sarel",
+		"Godwin",
+		"Lester"
+	],
+	"occupation-list": [
+		"mage",
+		"wizard",
+		"soldier",
+		"diplomat",
+		"merchant",
+		"archer",
+		"monk",
+		"sorcerer",
+		"warrior",
+		"lancer",
+		"swordsman",
+		"enchanter",
+		"barbarian",
+		"thief",
+		"rogue",
+		"priest",
+		"healer",
+		"alchemist"
+	],
+	"he":[
+	"He",
+	"#hero-name#"
+	],
+	"origin": [
+		"#pushStuff#"
+	],
+	"continue":[
+	"<p>#hero-name# the #demonym-list# #occupation# entered #dungeon-list# #country-list# looking for #objective-list#. Only #deity-list# knew what awaited the #hero-adj-list# #occupation# there... #movement-list#</p>"
+	],
+	"event-list":[
+	"#fight-list#",
+	"#trap-list#",
+	"#fluff-list#",
+	"#movement-list#",
+	"#endgame-list#"
+	],
+	"movement-list":[
+	"<p>#he# continued #direction-list# #through-list#.</p>#event-list#",
+	"<p>The sound of rushing feet behind him startled #hero-name#. He broke into a run, dashing #direction-list# #through-list# without looking back.</p>#event-list#"
+	],
+	"direction-list":[
+	"east",
+	"west",
+	"north",
+	"south",
+	"northeast",
+	"northwest",
+	"southeast",
+	"southwest"
+	],
+	"through-list":[
+	"down a corridor",
+	"through an intersection",
+	"past some locked doors",
+	"avoiding the sound of fighting from another hallway",
+	"through a secret passage in the wall"
+	],
+	"fluff-list":[
+	"<p>He heard a faint whispering, seemingly from nowhere. Just a trick of the mind... maybe.</p>#event-list#",
+	"<p>He heard the distant sound of a goblin cackling.</p>#event-list#",
+	"<p>He heard the distant shake of a troll's heavy footfall.</p>#event-list#",
+	"<p>He heard the sound of fighting from farther away.</p>#event-list#",
+	"<p>He paused for a moment to rest, watching out carefully for monsters.#event-list#</p>",
+	"<p>He could swear he'd seen a shadow out of the corner of his eye. He proceeded carefully, listening out for any suspicious noises.</p>#event-list#"
+	],
+	"fight-list": [
+		"#[monster:#monster-list#]fight-intro-list#"
+	],
+	"fight-intro-list": [
+		"<p><em>Whoosh!</em> #projectile-list# #fly-by-list# past him. Drawing his #favored-list# #weapon#, he turned to the #monster#.</p><p>#fight-turn-list#",
+		"<p>A shadow out of the corner of his eye was all the warning before he turned to face a #monster#.</p>#fight-turn-list#",
+		"<p>#hero-name# turned a corner and came to an abrupt halt. In front of him stood a fearless #monster#.</p>#fight-turn-list#"
+	],
+	"fight-turn-list":[
+	"#he# pulled out a scroll and read it out loud. #scroll-effect-list# <br/>#fight-turn-list#",
+	"#he# narrowly dodged the #monster#'s attack.<br/>#fight-turn-list#",
+	"#he# began chanting a spell... <em>#spell-word.capitalize# #spell-word# #spell-word#!</em> #spell-effect-list#",
+	"#he# attacked the #monster# with his #weapon#. #enemy-attacked-list#<br/>",
+	"The #monster# was upon him before he could even realize it! It struck with fury. #attack-result-list#",
+	"The #monster# dodged his attack and riposted with unsuspected speed. #attack-result-list#"
+	],
+	"attack-result-list":[
+	"He narrowly avoided the blow and slowly circled back, watching it with renewed attention.</br></br>#fight-turn-list#",
+	"He screamed in pain, cradling his arm and almost dropping his #weapon#.</br></br>#fight-turn-list#",
+	"He was sent flying and crashed to the ground with a dull thump. The #monster# went to strike while he was down, but he fought off the dizziness just in time to roll away. Thank #deity-list#! </br></br>#fight-turn-list#",
+	"He was sent flying and crashed to the ground with a dull thump!<br/> The #monster# didn't hesitate and struck him over and over. Everything went black..."
+	],
+	"enemy-attacked-list":[
+	"The #monster# collapsed in a bloody mess, and moved no more. #battle-victory-list# #event-list#",
+	"The #monster# screeched in pain, but gave him a determined look and refused to back down!<br/>#fight-turn-list#",
+	"But the monster swiftly got out of the way! <br/>#fight-turn-list#"
+	],
+	"battle-victory-list":[
+		"Trying not to look at the gruesome remains, #hero-name# continued on his way.",
+		"#hero-name# let out a weary sigh before continuing on his way. It was self defense, he knew, but it was one more soul to weigh on his shoulders...",
+		"Knowing the noise of the battle might have attracted more enemies, #hero-name# hurried on his way."
+	],
+	"trap-list":[
+	"<p><em>Click!</em> #hero-name# stopped for a moment, looking around in confusion at the sound. Almost a moment too late, he noticed a faint depression on the floor. A switch! #trap-effect-list#</p>"
+	],
+	"trap-effect-list":[
+	"A large rock ball came rolling down towards him. #trap-result-list#",
+	"An arrow shot out seemingly from nowhere. #trap-result-list#",
+	"A large hole was suddenly revealed just beneath his feet! #trap-result-list#",
+	"A spear came hurtling toward him! #trap-result-list#"
+	],
+	"trap-result-list":[
+	"He barely avoided it and let out a huge sigh of relief. #event-list#",
+	"He barely jumped out of the way, and wiped sweat from his brow. Too close! #event-list#",
+	"He screamed in pain. #event-list#",
+	"That was the end of #hero-name#..."
+	],
+	"scroll-effect-list":[
+	"The #monster# burst into flames.",
+	"A thick cloud of silence enveloped them.",
+	"A bright light blinded them."
+	],
+	"spell-effect-list":[
+	"The #monster# burst into flames. #enemy-attacked-list#",
+	"A fireball hurtled toward the #monster#. #enemy-attacked-list#",
+	"A soft, magical light surrounded his wounds as they closed. <br/>#fight-turn-list#",
+	"Icicles shot out from his hands and hurled towards the #monster#. #enemy-attacked-list#"
+	],
+	"spell-word":[
+	"sinur",
+	"kair",
+	"nal",
+	"tagolann",
+	"gadurm",
+	"sular",
+	"gadurm",
+	"hakon",
+	"nal",
+	"ta",
+	"pveathr",
+	"alan",
+	"gadurm",
+	"suh",
+	"sula",
+	"kyrnawi",
+	"utzilah",
+	"damen",
+	"estivas",
+	"pveathr",
+	"kini",
+	"kali",
+	"akula",
+	"jistrathar",
+	"akular",
+	"pakliol",
+	"nal",
+	"tsaran",
+	"kiranann",
+	"soth",
+	"korilath",
+	"tasarak",
+	"vimi",
+	"vinaquirem",
+	"shirak",
+	"soth",
+	"alan",
+	"utzilah",
+	"tagolann",
+	"korilath",
+	"kalipar",
+	"tagopar",
+	"jistrathar",
+	"akula",
+	"vigis",
+	"vinaquirem",
+	"sular",
+	"du",
+	"gadurm",
+	"kini",
+	"sular",
+	"dolibix",
+	"vigis",
+	"soth",
+	"digas",
+	"tagolann",
+	"igira",
+	"lethodar",
+	"puch",
+	"nal",
+	"sular",
+	"kali",
+	"nal",
+	"idish",
+	"lethodar",
+	"gadurm",
+	"vimi",
+	"hakon",
+	"sular",
+	"ithikitalkus",
+	"ne",
+	"ya",
+	"igira",
+	"dolibix",
+	"lethodar",
+	"maldifidii",
+	"kiranann",
+	"nal",
+	"miopiar",
+	"digas",
+	"vinaquirem",
+	"kali"
+],
+	"favored-list": [
+		"trusty",
+		"favored",
+		"old",
+		"beloved",
+		"favorite"
+	],
+	"weapon-list": [
+		"sword",
+		"lance",
+		"staff",
+		"scimitar",
+		"club",
+		"mace",
+		"longsword",
+		"bow and arrow",
+		"crossbow",
+		"axe",
+		"slingshot"
+	],
+	"monster-list": [
+		"goblin #monster-role-list#",
+		"orc #monster-role-list#",
+		"troll",
+		"kobold #monster-role-list#"
+	],
+	"monster-role-list": [
+		"chieftain",
+		"healer",
+		"priest",
+		"warrior",
+		"knight",
+		"shaman",
+		"soldier"
+	],
+	"projectile-list": [
+		"An arrow",
+		"A fireball",
+		"A lightning bolt",
+		"A crossbow bolt"
+	],
+	"fly-by-list": [
+		"flew",
+		"whizzed",
+		"hurled"
+	],
+	"demonym-list": [
+		"Shadirian",
+		"Marangani",
+		"Corvanian",
+		"Iteian",
+		"Lyran"
+	],
+	"deity-list": [
+		"the Fates",
+		"the Divines",
+		"the Divine Order",
+		"the Divine Chaos",
+		"Fate"
+	],
+	"dungeon-list": [
+		"a man-made cave in",
+		"the ruined castle of #castle-loc-list# in",
+		"an abandoned tower in",
+		"the ruins of #castle-loc-list# in",
+		"a forgotten temple in",
+		"a ruined temple in",
+		"some ruins standing at the outskirts of the haunted Sersire Woods in"
+	],
+	"castle-loc-list": [
+		"Talavalmir",
+		"an ancient king",
+		"a lost civilization",
+		"Xeliat",
+		"Zerneu",
+		"Taeusia",
+		"Markab",
+		"Hamal",
+		"Nerul",
+		"Varm"
+	],
+	"country-list": [
+		"Shadir",
+		"Corvan",
+		"Iteia",
+		"Saybir",
+		"Arymyr",
+		"Lyra",
+		"Agara",
+		"Treabia",
+		"Esmesh",
+		"Eflines",
+		"Adrax",
+		"Wodrein",
+		"Rostrole",
+		"Pralenia",
+		"Rusniles",
+		"Astea",
+		"Truconia",
+		"Doshen"
+	],
+	"objective-list": [
+		"a magic rune",
+		"forbidden knowledge",
+		"treasure",
+		"power",
+		"gold",
+		"an escaped fugitive",
+		"a sacred book",
+		"refuge"
+	],
+	"hero-adj-list": [
+		"intrepid",
+		"clever",
+		"wise",
+		"daring",
+		"bold",
+		"charming",
+		"legendary",
+		"young",
+		"brave"
+	],
+	"pushStuff": [
+		"#[hero-name:#name-list#][occupation:#occupation-list#][weapon:#weapon-list#]continue#"
+	],
+	"pushName":[
+	"#[hero-name:#name-list#]#"
+	],
+	"popStuff": [
+		"[POPoccupation][POPmonster]"
+	],
+	"endgame-list":[
+	"<p>He continued on and on, #through-list# and through countless twists and turns in corridors he could never recall. And after a while... #hero-name# found he had wandered deeper into the dungeon than ever so far. There was <em>something</em> different in the air as he continued onward, almost transfixed by something no one could see. He knew, <em>knew</em> his goal was not far now--straight ahead. How he knew, he had no idea. Perhaps it was #deity-list# whispering in his ear...</p>#endgame-room-list#"
+	],
+	"endgame-room-list":[
+	"<p>He found himself facing a set of large twin doors. Locked. He tried pounding on the doors, bashing them, hurling spells at them--nothing. All of this work, and for what? A locked door he could not open. It was so unfair, he didn't know whether to laugh or cry.</p>#downer-ending-list#"
+	],
+	"downer-ending-list":[
+	"<p>#hero-name# couldn't give it up. He kept wandering the dungeon, kept looking, searching for anything to get into that mysterious room... It was a will stronger than himself, a force he could not help but answer to without ever realizing. He ventured deeper and deeper into those mazelike corridors, until one day, no one heard of him anymore... This was the end of #hero-name# the #occupation#.</p>#downer-ending-continue#",
+	"<p>#hero-name# left, dejected. If only he had come better prepared... Perhaps it simply wasn't meant to be. He knew when to accept defeat. It was better to move on than risk staying in this dungeon any longer. Perhaps some other time...</p>",
+	"<p>#hero-name# wasn't about to give up so easily. He would leave for now, but he would be back--with help, with information, and definitely prepared for this set of doors. But that is another story, for someone else to tell...</p>"
+	],
+	"downer-ending-continue":[
+	"<p>Or was it? Legends still whisper of a shadow in the dungeon, a murmur in the air, a faint lament of a soul still searching for something it was never fated to find...</p>",
+	" "
+	]
+}
